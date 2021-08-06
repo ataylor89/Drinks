@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+    http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+	  
+    <bean id="coffee" class="drinks.Beverage">
+        <property name="name" value="Coffee"/>
+        <property name="description" value="Coffee made from ground coffee beans and a french press"/>
+        <property name="ingredients">
+            <list>
+                <value>Hot water</value>
+                <value>Ground coffee beans</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="smoothie" class="drinks.Beverage">
+        <property name="name" value="Banana Oat Almond Milk Smoothie"/>
+        <property name="description" value="Two bananas, lots of oats, almond milk"/>
+        <property name="ingredients">
+            <list>
+                <value>Banana</value>
+                <value>Banana</value>
+                <value>Oats</value>
+                <value>Almond Milk</value>
+            </list>
+        </property>
+    </bean>
+	
+    <bean id="glassCup" class="drinks.Cup">
+        <property name="name" value="Glass Cup"/>
+        <property name="description" value="Glass Cup with Handle"/>
+    </bean>
+
+    <bean id="thermos" class="drinks.Cup">
+        <property name="name" value="Thermos"/>
+        <property name="description" value="Pink Thermos"/>
+    </bean>
+</beans>
